@@ -3,30 +3,60 @@
   "path": "${PATH}:/usr/local/bin",
   "working_dir": "$project_path",
   "selector": "source.clojure",
+
+  "windows": {
+    "path": "${PATH}",
+    "shell": true,
+  },
+
   "variants": [
     { "cmd": ["lein", "marg", "-m", "-d", "docs"],
-      "name": "Lein: Documentation"
+      "name": "Lein: Documentation",
+      "windows": {
+        "shell" :true,
+      },
     },
     { "cmd": ["lein", "clean"],
-      "name": "Lein: Clean"
+      "name": "Lein: Clean",
+      "windows": {
+        "shell" :true,
+      },
     },
     { "cmd": ["lein", "run"],
-      "name": "Lein: Run"
+      "name": "Lein: Run",
+      "windows": {
+        "shell" :true,
+      },
     },
     { "cmd": ["lein", "test"],
-      "name": "Lein: Test"
+      "name": "Lein: Test",
+      "windows": {
+        "shell" :true,
+      },
     },
     { "cmd": ["lein", "retest"],
-      "name": "Lein: Re-test"
+      "name": "Lein: Re-test",
+      "windows": {
+        "shell" :true,
+      },
     },
     { "cmd": ["lein", "uberjar"],
-      "name": "Lein: Uberjar"
+      "name": "Lein: Uberjar",
+      "windows": {
+        "shell" :true,
+      },
     },
     { "cmd": ["lein", "jar"],
-      "name": "Lein: Jar"
+      "name": "Lein: Jar",
+      "windows": {
+        "shell" :true,
+      },
     },
     { "cmd": ["lein", "check"],
-      "name": "Lein: Check"
+      "name": "Lein: Check",
+      "windows": {
+        "shell" :true,
+      },
     }
-  ]
+  ],
 }
